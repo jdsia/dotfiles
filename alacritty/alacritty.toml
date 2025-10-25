@@ -1,0 +1,45 @@
+[font.normal]
+family = "DejaVuSansM Nerd Font Mono"
+#family = "iosevka"
+style = "bold"
+
+[colors.primary]
+#background = "#101010"
+#background ="#1d2021" #gruv
+background = "#000000"
+foreground = "#afafaf"
+
+[colors.normal]
+black = "#282828"
+red = "#cc241d"
+green = "#98971a"
+yellow = "#d79921"
+blue = "#458588"
+magenta = "#b16286"
+cyan = "#689d6a"
+white = "#a89984"
+
+[colors.bright]
+black = "#928374"
+red = "#fb4934"
+green = "#b8bb26"
+yellow = "#fabd2f"
+blue = "#83a598"
+magenta = "#d3869b"
+cyan = "#8ec07c"
+white = "#ebdbb2"
+
+
+[window]
+decorations = "buttonless"
+#opacity = 0.9
+opacity = 1.00
+
+[window.class]
+general = "Alacritty"
+instance = "Alacritty"
+
+#[window.padding]
+#x = 8
+#y = 15
+
