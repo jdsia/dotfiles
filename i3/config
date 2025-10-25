@@ -156,9 +156,14 @@ bindsym $super+d exec --no-startup-id dmenu_run
 #bindsym $mod+d exec --no-startup-id "rofi -modi drun,run -show drun"
 #bindsym $mod+shift+d exec --no-startup-id ~/.config/rofi/launchers/type-3/launcher.sh
 bindsym $mod+d exec --no-startup-id ~/.config/rofi/launchers/type-1/launcher.sh
+
+# rofi-theme-selector
+bindsym $mod+Shift+t exec --no-startup-id rofi-theme-selector
+
 # There also is i3-dmenu-desktop which only displays applications shipping a
 # .desktop file. It is a wrapper around dmenu, so you need that installed.
-bindcode $mod+shift+d exec --no-startup-id i3-dmenu-desktop
+#bindcode $mod+shift+d exec --no-startup-id i3-dmenu-desktop
+
 
 # Bookmarks Script
 bindsym $mod+shift+b exec --no-startup-id $HOME/.config/scripts/bookmark.sh
@@ -277,15 +282,13 @@ bindsym $mod+Shift+c reload
 bindsym $mod+Shift+r restart
 # exit i3 (logs you out of your X session)
 bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -B 'Yes, exit i3' 'i3-msg exit'"
-# Rofi Script to restart Computer
-bindsym $super+Shift+r exec $HOME/.config/scripts/prompt.sh "Test" "sudo reboot"
 
 # focus the child container
 #bindsym $mod+d focus child
 
 
 
-# Workspaces
+# Workspace settings
 
 #tab between workspaces
 
@@ -306,8 +309,9 @@ set $ws10 "10"
 # switch to next and previous workspace
 #bindsym $mod+n workspace next
 #bindsym $mod+p workspace prev
-bindsym $mod+Tab workspace next
-bindsym $mod+Shift+Tab workspace prev
+#bindsym $mod+Tab exec rofi -show window
+bindsym $mod+Tab exec rofi -show windowcd
+#bindsym $mod+Shift+Tab workspace prev
 
 # switch to workspace
 bindsym $mod+1 workspace number $ws1
