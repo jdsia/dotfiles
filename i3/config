@@ -199,7 +199,7 @@ exec alacritty --class popup_term \
 # resize/move it to the top ~20% of the screen and put it on scratchpad
 for_window [instance="^popup_term"] floating enable, border none, resize set 1920 600, move absolute position 0 0, mark popup_term, move scratchpad, sticky enable
 # bring it up with $mod+v
-bindsym $mod+Tab [instance="^popup_term$"] scratchpad show
+bindsym $super+Tab [instance="^popup_term$"] scratchpad show
 
 
 # change focus
@@ -283,6 +283,13 @@ bindsym $super+Shift+r exec $HOME/.config/scripts/prompt.sh "Test" "sudo reboot"
 # focus the child container
 #bindsym $mod+d focus child
 
+
+
+# Workspaces
+
+#tab between workspaces
+
+
 # Define names for default workspaces for which we configure key bindings later on.
 # We use variables to avoid repeating the names in multiple places.
 set $ws1 "1"
@@ -297,9 +304,10 @@ set $ws9 "9"
 set $ws10 "10"
 
 # switch to next and previous workspace
-bindsym $mod+n workspace next
-bindsym $mod+p workspace prev
-
+#bindsym $mod+n workspace next
+#bindsym $mod+p workspace prev
+bindsym $mod+Tab workspace next
+bindsym $mod+Shift+Tab workspace prev
 
 # switch to workspace
 bindsym $mod+1 workspace number $ws1
