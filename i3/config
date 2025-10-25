@@ -10,7 +10,7 @@
 # Please see https://i3wm.org/docs/userguide.html for a complete reference!
 
 # enables fibonacci splits
-#for_window [class=".*"] split toggle 
+for_window [class=".*"] split toggle 
 
 set $mod Mod1
 set $super Mod4
