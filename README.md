@@ -1,3 +1,6 @@
+old config at https://github.com/jdsia/linux-conf
+git broke so I had to make a new repo
+
 ### Dotfiles
 - Current Distro: Ubuntu
 
