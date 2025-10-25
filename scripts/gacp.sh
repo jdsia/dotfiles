@@ -11,7 +11,10 @@ if [ $# -eq 0 ]; then
 fi
 
 # 2. Get the current branch name
+# errors out here.
 BRANCH=$(git rev-parse --abbrev-ref HEAD)
+
+
 
 # 3. Run the Git commands
 echo "Staging files..."
