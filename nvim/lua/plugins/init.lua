@@ -19,7 +19,14 @@ return {
     build = ":TSUpdate"
   },
   {
-    "windwp/nvim-ts-autotag"
+    "windwp/nvim-ts-autotag",
+  },
+  {
+    "sphamba/smear-cursor.nvim",
+  },
+  {
+    "karb94/neoscroll.nvim",
+    opts = {},
   }
 
 
