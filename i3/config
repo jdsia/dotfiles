@@ -71,7 +71,7 @@ exec --no-startup-id feh --bg-scale /home/j/Pictures/**paintingcanal.png
 #gaps
 #gaps inner 20
 #gaps outer 10
-gaps inner 20
+gaps inner 10
 gaps outer 10
 
 set $mode_gaps Toggle gaps: (1) on (2) off
