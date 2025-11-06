@@ -133,9 +133,9 @@ floating_modifier $mod
 tiling_drag modifier titlebar
 
 # start a terminal
-#bindsym $mod+shift+Return exec --no-startup-id kitty
 #bindsym $mod+Return exec --no-startup-id alacritty -o font.size=8
 bindsym $mod+Return exec --no-startup-id kitty
+bindsym $mod+shift+Return exec --no-startup-id kitty tmux attach
 
 # Scratchpad floating Alacritty
 #for_window [title="scratchpad-term"] floating enable, move position center, sticky enable
